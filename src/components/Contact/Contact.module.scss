@@ -1,0 +1,234 @@
+.container {
+  .nameOfSection{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    color: #6F6F6F;
+  margin-bottom: 80px;
+  }
+  .sayHello{
+    font-family: "QueensTrial-Italic-Light";
+    letter-spacing: 0.008em;
+    font-weight:300;
+    font-size: 120px;
+    line-height: 120px;
+    margin: 0;
+    
+  }
+  .containerForSections{
+    display: grid;
+    grid-template-columns: 50%  auto;
+   
+    .twoSections{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+    }
+      .titlesForSections{
+        color:#626262;
+        font-size: 16px;
+        letter-spacing: 0.005em;
+        font-weight: 400;
+        margin: 0;
+      }
+  }
+
+  .leftPart{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    
+    .leftTitle{
+display: flex;
+align-items: flex-start;
+justify-content: start;
+      
+ul{
+  margin:0;
+  padding: 0;
+  margin-top: 22px;
+  li{
+    margin-bottom: -4px;
+    font-size: 18px;
+    letter-spacing: 0.005em;
+  }
+}
+}
+  }
+.rightPart{
+  .rightTitle{
+    display: flex;
+    gap: 30px;
+  }
+    ul{
+      margin:0;
+      padding: 0;
+      margin-top: 24px;
+    }
+    li{text-decoration-line: underline;
+      font-size: 18px;
+    letter-spacing: 0.005em;
+    }
+      li:hover{
+        text-decoration-line: none;
+  }
+}
+.shadow{
+  border-top: 0.2px solid #C6C6C6;
+  margin-top: 80px;
+  // margin-bottom: 100px;
+}
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+  a:hover{
+    color: red;
+   
+}
+
+// MEDIA 
+@media (max-width: 1180px) {
+  .container{
+    margin-top: 120px;
+    .nameOfSection{
+      margin-bottom: 48px;
+    }
+    .sayHello{
+      font-size: 64px;
+      line-height: 66px;
+    }
+  .containerForSections{
+ display: flex;
+ flex-direction: column;
+ .twoSections{
+  margin-top: 48px;
+  justify-content: start;
+ }
+ .leftPart{
+  margin-right: 120px;
+ }
+  }
+  .shadow{
+    margin-top: 65px;
+  }
+}
+}
+@media (max-width: 715px){
+  .container{
+    margin-top: 50px;
+    .nameOfSection{
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+    .sayHello{
+      font-size: 56px;
+      line-height: 66px;
+    }
+  .containerForSections{
+ display: flex;
+ align-items: start;
+ flex-direction: column;
+ .twoSections{
+  margin-top: 40px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  .leftPart{
+    margin-bottom: 40px;
+    .leftTitle{
+      ul{
+        margin-top: 16px;
+        li{
+          font-size: 14px;
+          line-height: 22px;
+          margin: 0;
+        }
+      }
+    }
+  }
+  .rightPart{
+    .rightTitle{
+    gap: 40px;
+    }
+      ul{
+        margin:0;
+        padding: 0;
+        margin-top: 16px;
+      }
+      li{text-decoration-line: underline;
+        font-size: 14px;
+      letter-spacing: 0.005em;
+      }
+        li:hover{
+          text-decoration-line: none;
+    }
+  }
+}
+
+  }
+  .shadow{
+    margin-top: 94px;
+  }
+}
+}
+@media (max-width: 400px){
+  .container{
+    margin-top: 80px;
+    .nameOfSection{
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+    .sayHello{
+      font-size: 56px;
+      line-height: 66px;
+    }
+  .containerForSections{
+ display: flex;
+ flex-direction: column;
+ .twoSections{
+  margin-top: 40px;
+  justify-content: start;
+  flex-direction: column;
+  .leftPart{
+    margin-bottom: 40px;
+    .leftTitle{
+      ul{
+        margin-top: 16px;
+        li{
+          font-size: 14px;
+          line-height: 22px;
+          margin: 0;
+        }
+      }
+    }
+  }
+  .rightPart{
+    .rightTitle{
+      display: flex;
+      gap: 40px;
+    }
+      ul{
+        margin:0;
+        padding: 0;
+        margin-top: 16px;
+      }
+      li{text-decoration-line: underline;
+        font-size: 14px;
+      letter-spacing: 0.005em;
+      }
+        li:hover{
+          text-decoration-line: none;
+    }
+  }
+}
+
+  }
+  .shadow{
+    margin-top: 94px;
+  }
+}
+}

@@ -1,0 +1,155 @@
+.container{
+   display: flex;
+   align-items: center;;
+  font-size: 72px;
+  font-weight: 400;
+  font-style: "Regular";
+  letter-spacing: 0.01em;
+  margin-top: 325px;
+  margin-bottom: 200px;
+ 
+
+  .text{
+    line-height: 88px;
+  }
+  img{
+      display: inline-block; 
+  }
+  span{
+    letter-spacing: 0.01em;
+    font-weight: 500;
+    font-size: 80px;
+    color: #FF3D00;
+    font-family: "QueensTrial-Italic";  
+    line-height: 0.9;
+  }
+  .img1{
+    position: relative;
+    padding: 0;
+    width: 65px;
+    height: 65px;
+    padding-right: 1rem;
+    bottom: 0rem;
+  }
+  .img2{
+    position: relative;
+    left: 1rem;
+    width: 65px;
+    height: 65px;
+    top: 0.6rem;
+  }
+  
+  p{
+    margin: 0;
+    padding: 0;
+  }
+}
+@media (max-width: 1200px) {
+  .container{
+    font-size: 48px;
+letter-spacing: 0.01em; 
+margin-top: 300px;
+margin-bottom: 120px;
+span{
+  font-size: 48px;
+  line-height: 56px;
+  line-height: 0.9;
+
+}
+.text{
+  line-height: 56px;
+}
+.img1{
+width: 40px;
+height: 40px;
+top: 2px;
+}
+.img2{
+  width: 40px;
+  height: 40px;
+  top: 4px;
+}
+}
+}
+
+@media (max-width: 800px){
+  .container{
+    font-size: 44px;
+letter-spacing: 0.01em; 
+margin-top: 250px;
+span{
+  font-size: 44px;
+  line-height: 50px;
+  line-height: 0.8;
+
+}
+.text{
+  line-height: 45px;
+}
+.img1{
+width: 35px;
+height: 35px;
+top: 2px;
+}
+.img2{
+  width: 35px;
+  height: 35px;
+  top: 4px;
+}
+}
+}
+@media (max-width: 600px){
+  .container{
+    font-size: 40px;
+letter-spacing: 0.01em; 
+margin-top: 230px;
+span{
+  font-size: 40px;
+  line-height: 46px;
+  line-height: 0.9;
+
+}
+.text{
+  line-height: 46px;
+}
+.img1{
+width: 30px;
+height: 30px;
+top: 2px;
+}
+.img2{
+  width: 30px;
+  height: 30px;
+  top: 4px;
+}
+}
+}
+@media (max-width: 400px){
+  .container{
+    font-size: 28px;
+letter-spacing: 0.01em; 
+margin-top: 200px;
+margin-bottom: 100px;
+span{
+  font-size: 28px;
+  line-height: 0.9;
+}
+.text{
+  line-height: 38px;
+}
+.img1{
+  width: 24px;
+  height: 24px;
+top: 2px;
+padding-right: 0.5rem;
+}
+.img2{
+  width: 24px;
+height: 24px;
+  top: 2px;
+  margin-left: -10px;
+}
+}
+}
+
+

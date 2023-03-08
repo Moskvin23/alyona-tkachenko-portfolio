@@ -1,3 +1,15 @@
+I have found how connect to a font repository zip file here:https://dev.to/ziqinyeow/how-to-add-custom-font-file-to-your-react-app-31kb
+
+Using @font-face
+
+Where I got background to body site - https://codepen.io/P1N2O/pen/pyBNzX
+
+How use more classes to button style - https://stackoverflow.com/questions/34521797/how-to-add-multiple-classes-to-a-reactjs-component
+also add yarn add react-scroll
+npm i react-lazy-load-image-component
+
+for album I`ve used https://postimages.org/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

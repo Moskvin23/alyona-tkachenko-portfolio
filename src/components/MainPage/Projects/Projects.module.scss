@@ -1,0 +1,276 @@
+.container{
+.title{
+  font-size: 24px;
+  color: #6F6F6F;
+  font-weight: 400;
+  margin-bottom: 80px;
+  letter-spacing: 0.01em;
+}
+  .twoSections{
+    display: flex;
+
+.leftSection{
+  width: 727px;
+  font-family: "Regular";
+  font-weight: 400;
+font-size: 32px;
+line-height: 40px;
+
+  .shadow{
+    border-top: 0.2px solid #C6C6C6;
+}
+.link{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+align-items: center;
+flex-direction: row;
+}
+      .subsection{
+        height: 142px;
+        width: 727px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: transform .5s;
+
+        span {
+          margin-right: 24px;
+          font-weight: 300;
+          font-size: 32px;
+          line-height: 32px;
+          letter-spacing: 0.02em;
+        font-family: "QueensTrial-Regular";
+        transition: transform .5s;
+
+      }
+    }
+    span:hover,.subsection:hover,.link:hover{
+      transform: translate(15px);
+      transition: .3s ease-in-out; 
+      color: red;
+    }
+}
+
+  .rightSection{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .picture{
+      height: 515px;
+      width: 600px; 
+    img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;	
+    border-radius: 16px;
+     }
+    }
+    }
+}
+}
+@media (max-width: 1400px) {
+  .container{
+  .title{
+    font-size: 18px;
+    margin-bottom: 58px;
+  }
+  .twoSections{
+  .leftSection{
+width: 650px;
+font-size: 28px;
+line-height: 32px;
+span{
+font-size: 28px;
+}
+.subsection{
+height: 104px;
+width: 650px;
+}
+.lastSubSection{
+height: 104px;
+width: 650px;
+}
+}
+.rightSection{
+.picture{
+  width: 485px;
+  height: 426px; 
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;	
+  border-radius: 16px;
+}
+   }
+     }
+       }
+         }
+          }
+@media  (max-width: 1250px) {
+  .container{
+  .title{
+    font-size: 18px;
+    margin-bottom: 48px;
+  }
+  .twoSections{
+  .leftSection{
+width: 500px;
+font-size: 24px;
+line-height: 32px;
+span{
+font-size: 24px;
+}
+.subsection{
+height: 104px;
+width: 500px;
+}
+.lastSubSection{
+height: 104px;
+width: 500px;
+}
+}
+.rightSection{
+.picture{
+  width: 435px;
+  height: 376px; 
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;	
+  border-radius: 16px;
+}
+   }
+     }
+       }
+         }
+          }
+@media(max-width: 1065px) {
+            .container{
+            .title{
+              margin-bottom: 35px;
+            }
+            .twoSections{
+            .leftSection{
+              font-size: 20px;
+          width: 380px;
+          span{
+          font-size: 20px;
+          }
+          .subsection{
+          height: 100px;
+          width: 380px;
+          }
+          .lastSubSection{
+          height: 100px;
+          width: 380px;
+          }
+          }
+          .rightSection{
+          .picture{
+            width: 405px;
+            height: 346px; 
+          img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;	
+            border-radius: 16px;
+          }
+  }
+     }  
+     }
+   }
+     }
+@media  (max-width: 864.99px) {
+      .container{
+      .title{
+        margin-bottom: 35px;
+      }
+      .twoSections{
+      .leftSection{
+        font-size: 20px;
+    width: 335px;
+    span{
+    font-size: 20px;
+    }
+    .subsection{
+    height: 100px;
+    width: 335px;
+    }
+    .lastSubSection{
+    height: 100px;
+    width: 335px;
+    }
+    }
+    .rightSection{
+    .picture{
+      width: 385px;
+      height: 326px; 
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;	
+      border-radius: 16px;
+    }
+}
+}  
+}
+}
+}
+@media  (max-width: 813.99px) {
+  .container{
+  .title{
+    margin-bottom: 35px;
+  }
+  .twoSections{
+  .leftSection{
+    font-size: 20px;
+width: 100%;
+span{
+font-size: 20px;
+}
+.subsection{
+height: 100px;
+width: 100%;
+}
+.lastSubSection{
+height: 100px;
+width: 100%;
+}
+}
+.rightSection{
+  display: none;
+}  
+}
+}
+}
+@media  (max-width: 400px) {
+  .container{
+  .title{
+    font-size: 18px;
+    margin-bottom: 32px;
+  }
+  .twoSections{
+
+  .leftSection{
+    font-size: 20px;
+width: 100%;
+span{
+font-size: 20px;
+}
+.subsection{
+height: 96px;
+width: 100%;
+}
+.lastSubSection{
+height: 96px;
+width: 100%;
+}
+}
+.rightSection{
+  display: none;
+}  
+}
+}
+}

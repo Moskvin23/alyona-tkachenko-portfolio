@@ -2,6 +2,8 @@ import React from 'react';
 import { RxArrowRight } from 'react-icons/rx';
 import style from './About.module.scss';
 import './About.module.scss';
+import { motion } from 'framer-motion';
+import { forwardRef } from 'react';
 
 const About = () => {
   function joinAll(...classes) {

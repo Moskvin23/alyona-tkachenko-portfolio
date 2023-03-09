@@ -1,9 +1,30 @@
 import style from './Contact.module.scss';
+import { motion } from 'framer-motion';
+
+const textAnimation = {
+  hidden: {
+    y: 40,
+    opacity: 0,
+  },
+  visible: {
+    x: 0,
+    y: 0,
+    opacity: 1,
+  },
+};
 const Contact = () => {
   return (
-    <div className={style.container} id="contact">
+    <motion.div id="contact" className={style.container}>
       <p className={style.nameOfSection}>Contact</p>
-      <section className={style.containerForSections}>
+      <motion.section
+        initial="hidden"
+        whileInView="visible"
+        transition={{ duration: 0.7 }}
+        animate={{ opacity: 0, scale: 1 }}
+        viewport={{ amount: 0.3 }}
+        style={{ overflow: 'hidden' }}
+        variants={textAnimation}
+        className={style.containerForSections}>
         <p className={style.sayHello}>Say Hello!</p>
         <section className={style.twoSections}>
           <section className={style.leftSection}>
@@ -43,9 +64,9 @@ const Contact = () => {
             </div>
           </section>
         </section>
-      </section>
+      </motion.section>
       <div className={style.shadow}></div>
-    </div>
+    </motion.div>
   );
 };
 

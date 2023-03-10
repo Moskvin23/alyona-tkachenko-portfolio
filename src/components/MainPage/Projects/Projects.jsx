@@ -1,6 +1,7 @@
 import style from './Projects.module.scss';
 import { HiOutlineArrowUpRight } from 'react-icons/hi2';
 import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 
 const projects = [
   {
@@ -43,7 +44,25 @@ const Projects = () => {
   //   useEffect(() => {
   //     fetchData();
   //   }, []);
-
+  const textAnimation = {
+    hidden: {
+      y: 40,
+      opacity: 0,
+    },
+    visible: {
+      x: 0,
+      y: 0,
+      opacity: 1,
+    },
+  };
+  const textAnimation2 = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+    },
+  };
   return (
     <div className={style.container} id="projects">
       <div>
@@ -52,33 +71,69 @@ const Projects = () => {
           {/* Left Side */}
           <section className={style.leftSection}>
             {projects.map((project) => (
-              <div className={style.shadow}>
+              <motion.div
+                variants={textAnimation}
+                // style={{ overflow: 'hidden' }}
+                initial="hidden"
+                whileInView="visible"
+                transition={{ duration: 0.7 }}
+                animate={{ opacity: 0, scale: 1 }}
+                viewport={{ amount: 0.3 }}
+                className={style.shadow}>
                 <div
                   className={style.subsection}
                   onMouseEnter={() => setIsShown(project.id)}
                   onMouseLeave={() => setIsShown(0)}>
                   <a href={`/${project.path}`} className={style.link} key={project.id}>
-                    <p key={project.id}>
+                    <motion.p
+                      variants={textAnimation}
+                      style={{ overflow: 'hidden' }}
+                      initial="hidden"
+                      whileInView="visible"
+                      transition={{ duration: 0.7 }}
+                      animate={{ opacity: 0, scale: 1 }}
+                      viewport={{ amount: 0.3 }}
+                      key={project.id}>
                       <span>0{project.id}</span>
                       {project.title}
-                    </p>
+                    </motion.p>
                     <HiOutlineArrowUpRight style={{ width: '20px' }} />
                   </a>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </section>
           {/* Right Side */}
           <section className={style.rightSection}>
-            <div className={style.picture}>
+            <motion.div
+              variants={textAnimation}
+              style={{ overflow: 'hidden' }}
+              initial="hidden"
+              whileInView="visible"
+              transition={{ duration: 0.7 }}
+              animate={{ opacity: 0, scale: 1 }}
+              viewport={{ amount: 0.2 }}
+              className={style.picture}>
               {!isShown ? (
                 <img src={projects[0].image} alt="pic" />
               ) : (
                 projects.map(
-                  (project) => isShown === project.id && <img src={project.image} alt="pic" />,
+                  (project) =>
+                    isShown === project.id && (
+                      <motion.img
+                        variants={textAnimation2}
+                        initial="hidden"
+                        whileInView="visible"
+                        transition={{ duration: 0.9 }}
+                        animate={{ opacity: 0.7, scale: 1 }}
+                        viewport={{ amount: 0.2 }}
+                        src={project.image}
+                        alt="pic"
+                      />
+                    ),
                 )
               )}
-            </div>
+            </motion.div>
           </section>
         </section>
       </div>

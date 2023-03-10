@@ -20,7 +20,7 @@ line-height: 40px;
     border-top: 0.2px solid #C6C6C6;
 }
 .link{
-  width: 100%;
+  width: 98%;
   display: flex;
   justify-content: space-between;
 align-items: center;
@@ -33,7 +33,7 @@ flex-direction: row;
         align-items: center;
         justify-content: space-between;
         transition: transform .5s;
-
+        
         span {
           margin-right: 24px;
           font-weight: 300;

@@ -3,27 +3,70 @@ import { RxArrowRight } from 'react-icons/rx';
 import style from './About.module.scss';
 import './About.module.scss';
 import { motion } from 'framer-motion';
-import { forwardRef } from 'react';
 
 const About = () => {
   function joinAll(...classes) {
     return classes.join(' ');
   }
+  const textAnimation = {
+    hidden: {
+      y: 40,
+      opacity: 0,
+    },
+    visible: {
+      x: 0,
+      y: 0,
+      opacity: 1,
+    },
+  };
+  const textAnimation2 = {
+    hidden: {
+      y: 20,
+      opacity: 0,
+    },
+    visible: {
+      x: 0,
+      y: 0,
+      opacity: 1,
+    },
+  };
 
   return (
     <>
       <div className={style.container} id="about">
-        <div className={style.wrapper}>
+        <motion.div
+          variants={textAnimation}
+          style={{ overflow: 'hidden' }}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.9 }}
+          animate={{ opacity: 0, scale: 1 }}
+          viewport={{ amount: 0.1 }}
+          className={style.wrapper}>
           <p className={style.title}>About</p>
-          <section className={style.mainTitle}>
+          <motion.section
+            variants={textAnimation}
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 0.8 }}
+            animate={{ opacity: 0, scale: 1 }}
+            viewport={{ amount: 0.1 }}
+            className={style.mainTitle}>
             <p>
               I'm
               <span> Alyona,</span> a designer based in Lviv, Ukraine. I am focusing on solving
               complex problems, building
               <span> sustainable products</span> and services.
             </p>
-          </section>
-          <section className={style.description}>
+          </motion.section>
+          <motion.section
+            variants={textAnimation2}
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 0.9 }}
+            animate={{ opacity: 0, scale: 1 }}
+            viewport={{ amount: 0.5 }}
+            className={style.description}>
             <p className={style.textDescription}>
               I specialize in creating visually appealing and functional user experiences focusing
               on results and quality. I'm passionate about interaction, UX, research, and
@@ -41,8 +84,8 @@ const About = () => {
                 <RxArrowRight />
               </button>
             </a>
-          </section>
-        </div>
+          </motion.section>
+        </motion.div>
       </div>
     </>
   );

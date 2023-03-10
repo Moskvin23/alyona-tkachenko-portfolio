@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const DashboardInfo = () => {
   const textAnimation = {
     hidden: {
-      y: 40,
+      y: 100,
       opacity: 0,
     },
     visible: {
@@ -19,9 +19,9 @@ const DashboardInfo = () => {
       variants={textAnimation}
       initial="hidden"
       whileInView="visible"
-      transition={{ duration: 0.7 }}
+      transition={{ duration: 0.9 }}
       animate={{ opacity: 0, scale: 1 }}
-      viewport={{ amount: 0.3 }}
+      viewport={{ amount: 0.4 }}
       className={style.container}>
       <div className={style.text}>
         <p>

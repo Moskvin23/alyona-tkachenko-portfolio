@@ -52,8 +52,7 @@
   .container{
     font-size: 48px;
 letter-spacing: 0.01em; 
-margin-top: 300px;
-margin-bottom: 120px;
+
 span{
   font-size: 48px;
   line-height: 56px;
@@ -78,17 +77,16 @@ top: 2px;
 
 @media (max-width: 800px){
   .container{
-    font-size: 44px;
+    font-size: 40px;
 letter-spacing: 0.01em; 
-margin-top: 250px;
 span{
-  font-size: 44px;
-  line-height: 50px;
+  font-size: 40px;
+  line-height: 46px;
   line-height: 0.8;
 
 }
 .text{
-  line-height: 45px;
+  line-height: 44px;
 }
 .img1{
 width: 35px;
@@ -104,17 +102,16 @@ top: 2px;
 }
 @media (max-width: 600px){
   .container{
-    font-size: 40px;
+    font-size: 36px;
 letter-spacing: 0.01em; 
-margin-top: 230px;
 span{
-  font-size: 40px;
-  line-height: 46px;
+  font-size: 36px;
+  line-height: 40px;
   line-height: 0.9;
 
 }
 .text{
-  line-height: 46px;
+  line-height: 40px;
 }
 .img1{
 width: 30px;
@@ -128,32 +125,32 @@ top: 2px;
 }
 }
 }
-// @media (max-width: 400px){
-//   .container{
-//     font-size: 28px;
-// letter-spacing: 0.01em; 
-// margin-top: 200px;
-// margin-bottom: 100px;
-// span{
-//   font-size: 28px;
-//   line-height: 0.9;
-// }
-// .text{
-//   line-height: 38px;
-// }
-// .img1{
-//   width: 24px;
-//   height: 24px;
-// top: 2px;
-// padding-right: 0.5rem;
-// }
-// .img2{
-//   width: 24px;
-// height: 24px;
-//   top: 2px;
-//   margin-left: -10px;
-// }
-// }
-// }
+@media (max-width: 400px){
+  .container{
+    font-size: 28px;
+letter-spacing: 0.01em; 
+margin-bottom:100px;
+height: 65vh;
+span{
+  font-size: 28px;
+  line-height: 0.9;
+}
+.text{
+  line-height: 38px;
+}
+.img1{
+  width: 24px;
+  height: 24px;
+top: 2px;
+padding-right: 0.5rem;
+}
+.img2{
+  width: 24px;
+height: 24px;
+  top: 2px;
+  margin-left: -10px;
+}
+}
+}
 
 

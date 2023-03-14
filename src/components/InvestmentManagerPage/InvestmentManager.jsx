@@ -57,7 +57,7 @@ const InvestmentManager = () => {
             </section>
           </div>
         </section>
-        {/* <section className={style.gridContainer}>
+        <section className={style.gridContainer}>
           <div className={style.gridItem}>
             <img alt="pic" src={pic1} />
           </div>
@@ -119,7 +119,7 @@ const InvestmentManager = () => {
               </div>
             </section>
           </section>
-        </section> */}
+        </section>
         <div className={style.wrapper3}>
           <section className={style.descriptionWithTitle}>
             <p className={style.titleForDescription}>Results</p>

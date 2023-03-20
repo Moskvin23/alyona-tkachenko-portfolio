@@ -10,15 +10,46 @@ import WebSiteMobile1 from '../../assets/images/WebSiteMobile1.png';
 import WebSiteMobile2 from '../../assets/images/WebSiteMobile2.png';
 import WebSiteMobile3 from '../../assets/images/WebSiteMobile3.png';
 import { SlArrowLeft } from 'react-icons/sl';
+import { motion } from 'framer-motion';
 
 const WebsiteFirstTheatrePage = () => {
+  const textAnimation = {
+    hidden: {
+      y: 40,
+      opacity: 0,
+    },
+    visible: {
+      x: 0,
+      y: 0,
+      opacity: 1,
+    },
+  };
+  const textAnimation2 = {
+    hidden: {
+      y: 20,
+      opacity: 0,
+    },
+    visible: {
+      x: 0,
+      y: 0,
+      opacity: 1,
+    },
+  };
   return (
     <>
       <a href="/" className={style.backToMainPage}>
         <SlArrowLeft size={15} />
         Back
       </a>
-      <section className={style.wrapper}>
+      <motion.section
+        className={style.wrapper}
+        variants={textAnimation}
+        style={{ overflow: 'hidden' }}
+        initial="hidden"
+        whileInView="visible"
+        transition={{ duration: 0.9 }}
+        animate={{ opacity: 0, scale: 1 }}
+        viewport={{ amount: 0.1 }}>
         <p className={style.title}>Website “First Theatre”</p>
         <ul className={style.subsection}>
           <li>Website</li>
@@ -35,8 +66,16 @@ const WebsiteFirstTheatrePage = () => {
             showcase the culture and repertoire of the theatre.
           </p>
         </div>
-      </section>
-      <section className={style.gridContainer}>
+      </motion.section>
+      <motion.section
+        className={style.gridContainer}
+        variants={textAnimation2}
+        style={{ overflow: 'hidden' }}
+        initial="hidden"
+        whileInView="visible"
+        transition={{ duration: 0.9 }}
+        animate={{ opacity: 0, scale: 1 }}
+        viewport={{ amount: 0.3 }}>
         <div className={style.gridItem}>
           <img alt="pic" src={Website1} />
         </div>
@@ -58,8 +97,16 @@ const WebsiteFirstTheatrePage = () => {
         <div className={style.gridItem}>
           <img alt="pic" src={Website7} />
         </div>
-      </section>
-      <div className={style.wrapper2}>
+      </motion.section>
+      <motion.div
+        className={style.wrapper2}
+        variants={textAnimation}
+        style={{ overflow: 'hidden' }}
+        initial="hidden"
+        whileInView="visible"
+        transition={{ duration: 0.9 }}
+        animate={{ opacity: 0, scale: 1 }}
+        viewport={{ amount: 0.1 }}>
         <section className={style.subsection2}>
           <p className={style.title2}>Design process</p>
           <p className={style.description2}>
@@ -72,8 +119,16 @@ const WebsiteFirstTheatrePage = () => {
             further.
           </p>
         </section>
-      </div>
-      <section className={style.gridContainer2}>
+      </motion.div>
+      <motion.section
+        className={style.gridContainer2}
+        variants={textAnimation2}
+        style={{ overflow: 'hidden' }}
+        initial="hidden"
+        whileInView="visible"
+        transition={{ duration: 0.9 }}
+        animate={{ opacity: 0, scale: 1 }}
+        viewport={{ amount: 0.1 }}>
         <div className={style.gridItem2}>
           <img alt="pic" src={WebSiteMobile1} className={style.gridRow2} />
         </div>
@@ -83,7 +138,7 @@ const WebsiteFirstTheatrePage = () => {
         <div className={style.gridItem2}>
           <img src={WebSiteMobile3} alt="pic" />
         </div>
-      </section>
+      </motion.section>
     </>
   );
 };

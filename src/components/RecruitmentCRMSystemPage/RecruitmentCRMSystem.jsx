@@ -11,15 +11,46 @@ import RecruitmentCRM9 from '../../assets/images/RecruitmentCRM9.png';
 import RecruitmentCRM10 from '../../assets/images/RecruitmentCRM10.png';
 import RecruitmentCRM11 from '../../assets/images/RecruitmentCRM11.png';
 import { SlArrowLeft } from 'react-icons/sl';
+import { motion } from 'framer-motion';
 
 const RecruitmentCRMSystem = () => {
+  const textAnimation = {
+    hidden: {
+      y: 40,
+      opacity: 0,
+    },
+    visible: {
+      x: 0,
+      y: 0,
+      opacity: 1,
+    },
+  };
+  const textAnimation2 = {
+    hidden: {
+      y: 20,
+      opacity: 0,
+    },
+    visible: {
+      x: 0,
+      y: 0,
+      opacity: 1,
+    },
+  };
   return (
     <>
       <a href="/" className={style.backToMainPageButton}>
         <SlArrowLeft size={15} />
         Back
       </a>
-      <section className={style.wrapper}>
+      <motion.section
+        className={style.wrapper}
+        variants={textAnimation}
+        style={{ overflow: 'hidden' }}
+        initial="hidden"
+        whileInView="visible"
+        transition={{ duration: 0.9 }}
+        animate={{ opacity: 0, scale: 1 }}
+        viewport={{ amount: 0.1 }}>
         <p className={style.title}>Recruitment CRM system</p>
         <ul className={style.subsection}>
           <li>CRM system</li>
@@ -38,8 +69,16 @@ const RecruitmentCRMSystem = () => {
             decisions about which candidates to pursue.
           </p>
         </div>
-      </section>
-      <section className={style.gridContainer}>
+      </motion.section>
+      <motion.section
+        className={style.gridContainer}
+        variants={textAnimation2}
+        style={{ overflow: 'hidden' }}
+        initial="hidden"
+        whileInView="visible"
+        transition={{ duration: 0.9 }}
+        animate={{ opacity: 0, scale: 1 }}
+        viewport={{ amount: 0.3 }}>
         <div className={style.gridItem}>
           <img alt="pic" src={RecruitmentCRM1} />
         </div>
@@ -55,8 +94,16 @@ const RecruitmentCRMSystem = () => {
         <div className={style.gridItem}>
           <img alt="pic" src={RecruitmentCRM5} />
         </div>
-      </section>
-      <div className={style.wrapper2}>
+      </motion.section>
+      <motion.div
+        className={style.wrapper2}
+        variants={textAnimation}
+        style={{ overflow: 'hidden' }}
+        initial="hidden"
+        whileInView="visible"
+        transition={{ duration: 0.9 }}
+        animate={{ opacity: 0, scale: 1 }}
+        viewport={{ amount: 0.1 }}>
         <section className={style.subsection2}>
           <p className={style.title2}>Design process</p>
           <section className={style.twoDescriptions}>
@@ -70,8 +117,16 @@ const RecruitmentCRMSystem = () => {
             </p>
           </section>
         </section>
-      </div>
-      <section className={style.gridContainer2}>
+      </motion.div>
+      <motion.section
+        className={style.gridContainer2}
+        variants={textAnimation2}
+        style={{ overflow: 'hidden' }}
+        initial="hidden"
+        whileInView="visible"
+        transition={{ duration: 0.9 }}
+        animate={{ opacity: 0, scale: 1 }}
+        viewport={{ amount: 0.1 }}>
         <div className={style.gridItem2}>
           <img alt="pic" src={RecruitmentCRM6} />
         </div>
@@ -90,7 +145,7 @@ const RecruitmentCRMSystem = () => {
         <div className={style.gridItem2}>
           <img alt="pic" src={RecruitmentCRM11} />
         </div>
-      </section>
+      </motion.section>
     </>
   );
 };

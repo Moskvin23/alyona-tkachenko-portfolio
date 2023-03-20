@@ -9,15 +9,46 @@ import InvestmentManager7 from '../../assets/images/InvestmentManager7.png';
 import InvestmentManager8 from '../../assets/images/InvestmentManager8.png';
 import InvestmentManager9 from '../../assets/images/InvestmentManager9.png';
 import { SlArrowLeft } from 'react-icons/sl';
+import { motion } from 'framer-motion';
 
 const JobSearchAppDashboard = () => {
+  const textAnimation = {
+    hidden: {
+      y: 40,
+      opacity: 0,
+    },
+    visible: {
+      x: 0,
+      y: 0,
+      opacity: 1,
+    },
+  };
+  const textAnimation2 = {
+    hidden: {
+      y: 20,
+      opacity: 0,
+    },
+    visible: {
+      x: 0,
+      y: 0,
+      opacity: 1,
+    },
+  };
   return (
     <>
       <a href="/" className={style.backToMainPageButton}>
         <SlArrowLeft size={15} />
         Back
       </a>
-      <section className={style.wrapper}>
+      <motion.section
+        className={style.wrapper}
+        variants={textAnimation}
+        style={{ overflow: 'hidden' }}
+        initial="hidden"
+        whileInView="visible"
+        transition={{ duration: 0.9 }}
+        animate={{ opacity: 0, scale: 1 }}
+        viewport={{ amount: 0.1 }}>
         <p className={style.title}>Job-search app</p>
         <ul className={style.subsection}>
           <li>Human Resource</li>
@@ -35,8 +66,16 @@ const JobSearchAppDashboard = () => {
             </p>
           </section>
         </div>
-      </section>
-      <section className={style.gridContainer}>
+      </motion.section>
+      <motion.section
+        className={style.gridContainer}
+        variants={textAnimation2}
+        style={{ overflow: 'hidden' }}
+        initial="hidden"
+        whileInView="visible"
+        transition={{ duration: 0.9 }}
+        animate={{ opacity: 0, scale: 1 }}
+        viewport={{ amount: 0.3 }}>
         <div className={style.gridItem}>
           <img alt="pic" src={InvestmentManager1} />
         </div>
@@ -49,8 +88,16 @@ const JobSearchAppDashboard = () => {
         <div className={style.gridItem}>
           <img alt="pic" src={InvestmentManager4} />
         </div>
-      </section>
-      <div className={style.wrapper2}>
+      </motion.section>
+      <motion.div
+        className={style.wrapper2}
+        variants={textAnimation}
+        style={{ overflow: 'hidden' }}
+        initial="hidden"
+        whileInView="visible"
+        transition={{ duration: 0.9 }}
+        animate={{ opacity: 0, scale: 1 }}
+        viewport={{ amount: 0.1 }}>
         <section className={style.subsection2}>
           <p className={style.title2}>Results</p>
           <section className={style.twoDescriptions}>
@@ -64,8 +111,16 @@ const JobSearchAppDashboard = () => {
             </p>
           </section>
         </section>
-      </div>
-      <section className={style.gridContainer2}>
+      </motion.div>
+      <motion.section
+        className={style.gridContainer2}
+        variants={textAnimation2}
+        style={{ overflow: 'hidden' }}
+        initial="hidden"
+        whileInView="visible"
+        transition={{ duration: 0.9 }}
+        animate={{ opacity: 0, scale: 1 }}
+        viewport={{ amount: 0.1 }}>
         <div className={style.gridItem2}>
           <img alt="pic" src={InvestmentManager5} />
         </div>
@@ -81,7 +136,7 @@ const JobSearchAppDashboard = () => {
         <div className={style.gridItem2}>
           <img alt="pic" src={InvestmentManager9} />
         </div>
-      </section>
+      </motion.section>
     </>
   );
 };

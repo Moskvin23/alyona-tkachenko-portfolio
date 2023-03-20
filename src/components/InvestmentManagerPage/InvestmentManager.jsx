@@ -17,8 +17,31 @@ import pic14 from '../../assets/images/Pic14.png';
 import pic15 from '../../assets/images/Pic15.png';
 import pic16 from '../../assets/images/Pic16.png';
 import pic17 from '../../assets/images/Pic17.png';
+import { motion } from 'framer-motion';
 
 const InvestmentManager = () => {
+  const textAnimation = {
+    hidden: {
+      y: 40,
+      opacity: 0,
+    },
+    visible: {
+      x: 0,
+      y: 0,
+      opacity: 1,
+    },
+  };
+  const textAnimation2 = {
+    hidden: {
+      y: 20,
+      opacity: 0,
+    },
+    visible: {
+      x: 0,
+      y: 0,
+      opacity: 1,
+    },
+  };
   return (
     <>
       <>
@@ -26,7 +49,15 @@ const InvestmentManager = () => {
           <SlArrowLeft size={15} />
           Back
         </a>
-        <section className={style.wrapper}>
+        <motion.section
+          className={style.wrapper}
+          variants={textAnimation}
+          style={{ overflow: 'hidden' }}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.9 }}
+          animate={{ opacity: 0, scale: 1 }}
+          viewport={{ amount: 0.1 }}>
           <p className={style.title}>Investment manager</p>
           <ul className={style.subsection}>
             <li>Fintech</li>
@@ -47,8 +78,16 @@ const InvestmentManager = () => {
               </p>
             </section>
           </div>
-        </section>
-        <section className={style.gridContainer}>
+        </motion.section>
+        <motion.section
+          className={style.gridContainer}
+          variants={textAnimation2}
+          style={{ overflow: 'hidden' }}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.9 }}
+          animate={{ opacity: 0, scale: 1 }}
+          viewport={{ amount: 0.3 }}>
           <div className={style.gridItem}>
             <img alt="pic" src={pic1} />
           </div>
@@ -58,8 +97,16 @@ const InvestmentManager = () => {
           <div className={style.gridItem}>
             <img alt="pic" src={pic3} />
           </div>
-        </section>
-        <section className={style.container}>
+        </motion.section>
+        <motion.section
+          className={style.container}
+          variants={textAnimation}
+          style={{ overflow: 'hidden' }}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.9 }}
+          animate={{ opacity: 0, scale: 1 }}
+          viewport={{ amount: 0.1 }}>
           <section className={style.underContainer}>
             <div className={style.wrapper2}>
               <div className={style.descriptionWithTitle}>
@@ -77,7 +124,15 @@ const InvestmentManager = () => {
                 </section>
               </div>
             </div>
-            <section className={style.gridContainer2}>
+            <motion.section
+              className={style.gridContainer2}
+              variants={textAnimation2}
+              style={{ overflow: 'hidden' }}
+              initial="hidden"
+              whileInView="visible"
+              transition={{ duration: 0.9 }}
+              animate={{ opacity: 0, scale: 1 }}
+              viewport={{ amount: 0.1 }}>
               <div className={style.gridItem2}>
                 <img alt="pic" src={pic4} />
               </div>
@@ -102,10 +157,18 @@ const InvestmentManager = () => {
               <div className={style.gridItem2}>
                 <img alt="pic" src={pic11} />
               </div>
-            </section>
+            </motion.section>
           </section>
-        </section>
-        <div className={style.wrapper3}>
+        </motion.section>
+        <motion.div
+          className={style.wrapper3}
+          variants={textAnimation}
+          style={{ overflow: 'hidden' }}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.9 }}
+          animate={{ opacity: 0, scale: 1 }}
+          viewport={{ amount: 0.1 }}>
           <section className={style.descriptionWithTitle}>
             <p className={style.titleForDescription}>Results</p>
             <p className={style.description}>
@@ -117,8 +180,16 @@ const InvestmentManager = () => {
               manager's brand identity and the new visual style.
             </p>
           </section>
-        </div>
-        <section className={style.gridContainer3}>
+        </motion.div>
+        <motion.section
+          className={style.gridContainer3}
+          variants={textAnimation2}
+          style={{ overflow: 'hidden' }}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.9 }}
+          animate={{ opacity: 0, scale: 1 }}
+          viewport={{ amount: 0.1 }}>
           <div className={style.gridItem3}>
             <img alt="pic" src={pic12} />
           </div>
@@ -137,7 +208,7 @@ const InvestmentManager = () => {
           <div className={style.gridItem3}>
             <img alt="pic" src={pic17} />
           </div>
-        </section>
+        </motion.section>
       </>
     </>
   );

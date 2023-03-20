@@ -27,8 +27,7 @@ const DashboardInfo = () => {
         <p>
           <img src={star} alt="some icon" className={style.img1} />
           I'm a<span> UI/UX designer </span>
-          passionate about delivering intuitive, functional and compelling and compelling
-          interactive solutions
+          passionate about delivering intuitive, functional and compelling interactive solutions
           <img src={star} alt="some icon" className={style.img2} />
         </p>
       </div>

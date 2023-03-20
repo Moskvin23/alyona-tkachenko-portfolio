@@ -37,22 +37,13 @@ const InvestmentManager = () => {
             <p className={style.titleForDescription}>About project</p>
             <section className={style.twoDescriptions}>
               <p className={style.leftDescription}>
-                The application is designed to educate and empower users to manage their finances
-                like wealthy individuals do. The newly revamped design provides a personalized
-                experience that maximizes user progress through an integrated educational resources,
-                such as articles, videos, and webinars, that help to demystify personal finance and
-                promote financial literacy. With the new design, users can manually track their
-                balance sheet accounts, including assets and liabilities, using the proven TWF
-                methodology.
-              </p>
-              <p className={style.rightDescription}>
-                They can also set earned and unearned income goals, identify freedom and lifestyle
-                numbers, track their progress, eliminate debt quickly, and utilize rules-based
-                systems to build a comprehensive compound asset growth forecasting. Overall, the
-                application offers a powerful tool for users to take control of their financial
-                lives and achieve their goals. With its intuitive design and comprehensive features,
-                it enables users to make informed financial decisions and build a strong financial
-                foundation for the future.
+                The application aims to teach users how to manage their finances like wealthy
+                individuals by providing personalized education through articles, videos, and
+                webinars. The redesigned interface allows users to track their assets and
+                liabilities using the TWF methodology, set income goals, monitor progress, eliminate
+                debt, and build a compound asset growth forecast using rule-based systems.
+                Ultimately, the application offers a powerful tool for users to take control of
+                their finances and achieve their financial goals.
               </p>
             </section>
           </div>
@@ -75,19 +66,13 @@ const InvestmentManager = () => {
                 <p className={style.titleForDescription}>Proccess</p>
                 <section className={style.twoDescriptions}>
                   <p className={style.leftDescription}>
-                    To ensure that the investment manager's web portal remained competitive and
-                    up-to-date, competitor research was conducted to identify best practices and
-                    emerging trends in the industry. This led to the rebuilding of the information
-                    architecture to make it more user-friendly and intuitive. The new structure
-                    involved analyzing user data and feedback, identifying user needs, and
-                    restructuring the platform accordingly.
-                  </p>
-                  <p className={style.rightDescription}>
-                    A new, clean, and modern visual style was created, including a color palette,
-                    typography, and illustrations that aligned with the investment manager's brand
-                    identity. Finally, a new user interface design was developed, featuring
-                    intuitive navigation menus and interactive elements to enhance user engagement
-                    and usability.
+                    Web portal was updated to remain competitive and current. This was achieved
+                    through conducting competitor research to identify best practices and emerging
+                    trends. The information architecture was rebuilt to make it more user-friendly
+                    and intuitive. A new visual style was created, with a color palette, typography,
+                    and illustrations that matched the brand identity. Finally, a new user interface
+                    design was developed, featuring intuitive navigation menus and interactive
+                    elements to improve user engagement and usability.
                   </p>
                 </section>
               </div>

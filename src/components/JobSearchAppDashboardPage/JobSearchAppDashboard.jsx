@@ -29,14 +29,9 @@ const JobSearchAppDashboard = () => {
             <p className={style.leftDescription}>
               The project involved designing a new mobile app for a job-search product . To ensure a
               comprehensive approach to design, I started with competitor research to understand the
-              best practices and emerging trends. That helped guide the design process and ensure
-              that the new mobile portal remained competitive and up-to-date..
-            </p>
-            <p className={style.rightDescription}>
-              Next, a new visual style was created, which included a fresh color palette,
-              typography, and illustrations. The visual style was designed to be modern, engaging,
-              and visually appealing while also being professional and trustworthy. To bring unique
-              and custom illustrations to the application, I collaborated with an artist.
+              best practices and emerging trends. The visual style was designed to be modern,
+              engaging, and visually appealing while also being professional and trustworthy. To
+              bring unique and custom illustrations to the app, I collaborated with an artist.
             </p>
           </section>
         </div>

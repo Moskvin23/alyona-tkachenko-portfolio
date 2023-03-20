@@ -1,6 +1,6 @@
 import style from './Projects.module.scss';
 import { HiOutlineArrowUpRight } from 'react-icons/hi2';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 
 const projects = [

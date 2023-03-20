@@ -9,7 +9,7 @@ import About from '../../components/MainPage/About/About';
 const MainPage = () => {
   return (
     <>
-      <div initial="hidden" whileInView="visible" className={style.wrapper}>
+      <div initial="hidden" className={style.wrapper}>
         <Navbar />
         <DashboardInfo />
         <Projects />

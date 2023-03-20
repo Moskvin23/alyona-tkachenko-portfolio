@@ -61,20 +61,12 @@ const RecruitmentCRMSystem = () => {
           <p className={style.title2}>Design process</p>
           <section className={style.twoDescriptions}>
             <p className={style.description2}>
-              The design process involved several steps: to begin with, competitor research was
-              conducted to understand best practices in the industry. A new visual style was
-              created, which included a complex design system with a variety of visual elements that
-              were carefully crafted to ensure the portal was both visually appealing and easy to
-              use. A new logo and identity were also created to help reinforce the brand and
-              distinguish the recruitment company from its competitors.
-            </p>
-            <p className={style.description2}>
-              The new web portal was designed with the user in mind, featuring a user-friendly
-              interface that allows recruiters to easily navigate and access candidate and client
-              data. Also, a chrome extension was created to help users gather data from LinkedIn.
-              This extension makes it easy for recruiters to quickly and efficiently gather
-              information about potential candidates, improving the efficiency of the recruitment
-              process.
+              The design process involved several steps: competitor research was conducted to
+              understand best practices in the industry; new visual style, which included a complex
+              design system; new logo and identity which helped reinforce the brand and distinguish
+              the recruitment company from its competitors; the new web portal that allows
+              recruiters to easily navigate and access candidate and client data; chrome extension
+              was created to help users gather data from LinkedIn.
             </p>
           </section>
         </section>

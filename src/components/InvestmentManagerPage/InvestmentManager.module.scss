@@ -11,8 +11,9 @@
   align-items: center;
 
 }
+body{overflow-x: hidden;}
+
 .wrapper {
-  overflow-x: hidden;
   top: 120px;
   display: flex;
   align-items:start;

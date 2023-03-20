@@ -1,3 +1,24 @@
+**Hello everyone!** 
+
+You could see the site - https://alyona-tkachenko-portfolio.netlify.app/
+-----
+And there is Figma layout - https://www.figma.com/file/jpMQlmHAOxjHQXuya4Vio7/Portfolio?node-id=12-5459&t=dGam7r4tHu1LkVtC-0
+![image](https://user-images.githubusercontent.com/79521676/226440688-e480d259-60cb-40c6-8929-96d851e4912a.png)
+![image](https://user-images.githubusercontent.com/79521676/226440798-67edcb46-bbdc-4506-b0db-37330e9976dc.png)
+![image](https://user-images.githubusercontent.com/79521676/226440877-d9a54d3d-dd93-4724-8395-45c3373de536.png)
+![image](https://user-images.githubusercontent.com/79521676/226440955-4ddbed5e-d7bd-41f6-8410-2f7590993f8b.png)
+ 
+
+I have developed a website portfolio. My friend asked me to make a site, actually she is a graphic designer (UI/UX) so made a layout of the site which consists of WEB version , Tablet version and also mobile version.
+The Main task was to make strictly by layout and also to create animation for different elements. 
+I used for the gallery css style GRID that helped me to build a gallery on the layout.
+ 
+Development and maintenance of existing code from scratch.
+Responsive HTML/CSS/JS coding from Figma layout.
+
+
+ 
+
 I have found how connect to a font repository zip file here:https://dev.to/ziqinyeow/how-to-add-custom-font-file-to-your-react-app-31kb
 
 Using @font-face

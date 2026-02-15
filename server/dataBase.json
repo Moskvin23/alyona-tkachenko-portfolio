@@ -1,50 +1,48 @@
 {
-  "projects" : [
+  "projects": [
     {
       "id": 1,
       "title": "Investment manager",
-      "image":
-        "https://i.postimg.cc/7PpDRhXP/Frame1.png",
-        "path": "investmentManager"
+      "image": "https://i.postimg.cc/7PpDRhXP/Frame1.png",
+      "path": "investmentManager"
     },
     {
       "id": 2,
-      "title": "Recruitment CRM system",
-      "image":
-        "https://i.postimg.cc/DmVCPtrF/Frame2.png",
-        "path": "recruitmentCRMSystem"
+      "title": "Job-search application",
+      "image": "https://i.postimg.cc/DmVCPtrF/Frame2.png",
+      "path": "recruitmentCRMSystem"
     },
     {
       "id": 3,
-      "title": "Job-search application",
+      "title": "Recruitment CRM system",
       "image": "https://i.postimg.cc/QdDDXzRR/Frame3.png",
       "path": "jobSearchApplication"
     },
     {
       "id": 4,
+      "title": "Coaching business products & website",
+      "image": "https://i.postimg.cc/JHbZLXVX/Frame5.png",
+      "path": "coachingBusinessProductsWebsite"
+    },
+    {
+      "id": 5,
       "title": "Theatre website",
-      "image":"https://i.postimg.cc/wTLHYzbX/Frame4.png",
+      "image": "https://i.postimg.cc/wTLHYzbX/Frame4.png",
       "path": "websiteFirstTheatre"
     }
   ],
-  
   "pages": [
     {
-    "investmentManager":[
-      {
-        "id":1,
-      "image":""
+      "investmentManager": [
+        {
+          "id": 1,
+          "image": ""
+        }
+      ],
+      "jobSearchApplication": [],
+      "recruitmentCRMSystem": [],
+      "coachingBusinessProductsWebsite": [],
+      "websiteFirstTheatre": []
     }
-     ],
-     "jobSearchApplication":[
-
-     ],
-    "recruitmentCRMSystem":[
-
-    ],
-    "websiteFirstTheatre":[
-
-    ]
-  }
-]  
+  ]
 }

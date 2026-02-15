@@ -43,20 +43,8 @@ const Contact = () => {
               <div>
                 <ul className={style.rightTitle}>
                   <li>
-                    <a target="_blank" href="https://www.linkedin.com/in/alona-tkachenko-7261251bb">
+                    <a target="_blank" href="https://www.linkedin.com/in/alona-tkachenko-7261251bb" rel="noreferrer">
                       LinkedIn
-                    </a>
-                  </li>
-                  <li>
-                    <a target="_blank" href="https://www.instagram.com/aloshk_a">
-                      Instagram
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      target="_blank"
-                      href="https://www.behance.net/alyonatkac7d9e?tracking_source=search_users|alona%20tkachenko">
-                      Behance
                     </a>
                   </li>
                 </ul>

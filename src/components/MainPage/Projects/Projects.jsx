@@ -12,18 +12,24 @@ const projects = [
   },
   {
     id: 2,
-    title: 'Recruitment CRM system',
+    title: 'Job-search application',
     image: 'https://i.postimg.cc/DmVCPtrF/Frame2.png',
     path: 'recruitmentCRMSystem',
   },
   {
     id: 3,
-    title: 'Job-search application',
+    title: 'Recruitment CRM system',
     image: 'https://i.postimg.cc/QdDDXzRR/Frame3.png',
     path: 'jobSearchApplication',
   },
   {
     id: 4,
+    title: 'Coaching business products & website',
+    image: 'https://i.postimg.cc/Wzyn0m55/Frame-1753.png',
+    path: 'coachingBusinessProductsWebsite',
+  },
+  {
+    id: 5,
     title: 'Theatre website',
     image: 'https://i.postimg.cc/wTLHYzbX/Frame4.png',
     path: 'websiteFirstTheatre',

@@ -1,0 +1,505 @@
+// Hero + Overview (Figma: білий фон, заокруглення зверху)
+$textBody: #404040;
+$textDark: #18181a;
+
+.backLink {
+  margin-top: 56px;
+  margin-bottom: 24px;
+  cursor: pointer;
+  font-family: "Regular", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: $textBody;
+  text-decoration: none;
+  transition: color 0.2s;
+  &:hover {
+    color: $textDark;
+  }
+}
+
+// —— Hero — повноширинне зображення; заокруглення 36px тільки знизу, окремо від Overview ——
+.hero {
+  margin-left: -60px;
+  margin-right: -60px;
+  line-height: 0;
+  border-radius: 36px;
+  overflow: hidden;
+  @media (max-width: 750px) {
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+  @media (max-width: 550px) {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+}
+
+.heroImageFull {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  object-position: top center;
+}
+
+// —— Designs delivered — та сама ширина, що й Hero (Frame 427319521.png); border-radius 36px ——
+.designsDelivered {
+  margin-left: -60px;
+  margin-right: -60px;
+  line-height: 0;
+  border-radius: 36px;
+  overflow: hidden;
+  @media (max-width: 750px) {
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+  @media (max-width: 550px) {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+}
+
+.designsDeliveredImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  object-position: top center;
+}
+
+// —— Coach platform — текст з Figma (PolySans / General Sans, #18181A) ——
+.coachPlatform {
+  background: #ffffff;
+  padding: 150px 60px 80px; /* 150px зверху — через padding, щоб не було margin collapse */
+  @media (max-width: 900px) {
+    padding: 100px 40px 56px;
+  }
+  @media (max-width: 550px) {
+    padding: 72px 20px 48px;
+  }
+}
+
+/* Блок після табів (Operations platform): без верхнього відступу, 150px вже дає .segmentSection */
+.coachPlatformAfterSegment {
+  padding-top: 0;
+  @media (max-width: 900px) {
+    padding-top: 0;
+  }
+  @media (max-width: 550px) {
+    padding-top: 0;
+  }
+}
+
+/* Блок Website після Design-Dev: відстань 150px зверху (70px + 80px від попереднього) */
+.coachPlatformAfterDesignDev {
+  padding-top: 70px;
+  @media (max-width: 900px) {
+    padding-top: 56px;
+  }
+  @media (max-width: 550px) {
+    padding-top: 48px;
+  }
+}
+
+// Відео під блоком Website — відстань 24px зверху
+.websiteVideoWrap {
+  margin-top: 24px;
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 6px solid transparent;
+  background:
+    linear-gradient(0deg, #ffffff, #ffffff) padding-box,
+    linear-gradient(180deg, rgba(156, 45, 200, 0.06) 0%, rgba(35, 73, 246, 0.06) 100%) border-box;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.websiteVideo {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.coachPlatformContent {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+// Ряд як у Overview: заголовок зліва + текст справа
+.coachPlatformRow {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 120px;
+  @media (max-width: 900px) {
+    gap: 64px;
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 28px;
+  }
+}
+
+// Ліва колонка: іконка + "Coach platform" в один рядок
+.coachPlatformTitleWrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.coachPlatformNumberIcon {
+  width: 36px;
+  height: 36px;
+  display: block;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+// "Coach platform" — Figma: PolySans, 400, Neutral, 32px, 40px, -1%; в один рядок
+.coachPlatformTitle {
+  font-family: "PolySans", sans-serif;
+  font-weight: 400;
+  font-style: normal; /* Neutral */
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.01em; /* -1% */
+  color: #18181a;
+  margin: 0;
+  white-space: nowrap;
+  @media (max-width: 550px) {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+// Права колонка: підзаголовок + абзаци — зсунуті правіше
+.coachPlatformTextBlock {
+  flex: 1;
+  min-width: 0;
+  max-width: 680px;
+  margin-left: auto;
+  @media (max-width: 768px) {
+    max-width: none;
+    margin-left: 0;
+  }
+}
+
+// "One-stop solution for Arete's coaches" — Figma: PolySans 400, 24px, 34px, 0%, #18181A
+.coachPlatformSubtitle {
+  font-family: "PolySans", "Regular", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 0;
+  color: #18181a;
+  margin: 0 0 20px 0;
+  @media (max-width: 550px) {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 16px;
+  }
+}
+
+// Абзаци — Figma: General Sans Regular 400, 18px, 28px, 0%, #18181A
+.coachPlatformText {
+  font-family:
+    "General Sans",
+    system-ui,
+    -apple-system,
+    sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0;
+  color: #18181a;
+
+  p {
+    margin: 0 0 16px 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  @media (max-width: 550px) {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+// —— Сегментований контрол: пілл як на макеті; 150px знизу до блоку Operations platform ——
+.segmentSection {
+  background: #ffffff;
+  padding: 0 60px 150px;
+  @media (max-width: 550px) {
+    padding: 0 20px 80px;
+  }
+}
+
+.segmentControl {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 0;
+  background: #f3f3f7;
+  border-radius: 24px;
+  width: 100%;
+  height: 48px;
+  box-sizing: border-box;
+}
+
+// Текст у табах: General Sans 500, 18px, 28px, center; неактивний — #18181A
+.segmentItem,
+.segmentActive {
+  flex: 1;
+  padding: 0 12px;
+  border: none;
+  border-radius: 24px;
+  font-family: "General Sans", system-ui, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0;
+  text-align: center;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    color 0.2s;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.segmentItem {
+  color: #18181a;
+  font-weight: 500;
+}
+
+.segmentItem:hover {
+  color: #18181a;
+  background: rgba(88, 4, 232, 0.08);
+}
+
+// Вибраний сегмент — та сама ширина, що й інші (flex: 1), щоб текст не стрибав при перемиканні
+.segmentActive {
+  border-radius: 24px;
+  background: #5804e8;
+  color: #ffffff;
+}
+
+// Контент під табами: зображення за табом (відстань до кнопок 56px)
+.segmentContent {
+  margin-top: 56px;
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.segmentContentImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  object-position: top center;
+}
+
+// —— Design-Dev Alignment — між блоками 24px (padding-bottom), останній блок має 80px знизу ——
+.designDevSection {
+  background: #ffffff;
+  padding: 0 60px 24px;
+  @media (max-width: 550px) {
+    padding: 0 20px 24px;
+  }
+}
+
+/* Останній блок Design-Dev — більший відступ знизу */
+.designDevSectionLast {
+  padding-bottom: 80px;
+  @media (max-width: 550px) {
+    padding-bottom: 48px;
+  }
+}
+
+.designDevImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  object-position: top center;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+// —— Overview — білий фон, заокруглення зверху, розміщення як у Figma (280/741, 231/784) ——
+// Overview — під Hero, без накладання; Hero має свій border-radius знизу
+.overview {
+  margin-left: -60px;
+  margin-right: -60px;
+  margin-top: 0;
+  background: #ffffff;
+  border-radius: 0;
+  padding: 72px 80px 80px;
+  position: relative;
+  @media (max-width: 900px) {
+    padding: 56px 40px 56px;
+  }
+  @media (max-width: 750px) {
+    margin-left: -30px;
+    margin-right: -30px;
+    padding: 48px 30px 48px;
+  }
+  @media (max-width: 550px) {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 40px 20px 40px;
+  }
+}
+
+.overviewContent {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+// Ряд: Overview + відстань + текст
+.overviewRow {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 120px;
+  margin-bottom: 72px;
+  @media (max-width: 900px) {
+    gap: 64px;
+    margin-bottom: 56px;
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 28px;
+    margin-bottom: 48px;
+  }
+}
+
+// "Overview" — Figma: PolySans Neutral 400, 56px, 64px, -1%, #18181A, width 231 height 64
+.overviewTitle {
+  font-family: "PolySans", "Regular", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -0.01em;
+  color: #18181a;
+  margin: 0;
+  width: 231px;
+  flex-shrink: 0;
+  @media (max-width: 900px) {
+    font-size: 48px;
+    line-height: 56px;
+    width: auto;
+    max-width: 231px;
+  }
+  @media (max-width: 768px) {
+    font-size: 40px;
+    line-height: 48px;
+    width: auto;
+    max-width: none;
+  }
+}
+
+// Текст — ширина як у Figma (784px), розмір трохи менший
+.overviewTextBlock {
+  flex: 1;
+  min-width: 0;
+  max-width: 680px;
+  font-family:
+    "General Sans",
+    system-ui,
+    -apple-system,
+    sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0;
+  color: #18181a;
+  @media (max-width: 768px) {
+    max-width: none;
+  }
+}
+
+.overviewText {
+  font-family: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0;
+  color: #18181a;
+  margin: 0 0 14px 0;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @media (max-width: 650px) {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 12px;
+  }
+}
+
+.overviewImageWrap {
+  margin-left: -160px;
+  margin-right: -160px;
+  width: calc(100% + 320px);
+  max-width: none;
+  border-radius: 0;
+  overflow: hidden;
+
+  @media (max-width: 1600px) {
+    margin-left: -120px;
+    margin-right: -120px;
+    width: calc(100% + 240px);
+  }
+  @media (max-width: 1400px) {
+    margin-left: -100px;
+    margin-right: -100px;
+    width: calc(100% + 200px);
+  }
+  @media (max-width: 1200px) {
+    margin-left: -80px;
+    margin-right: -80px;
+    width: calc(100% + 160px);
+  }
+  @media (max-width: 900px) {
+    margin-left: -60px;
+    margin-right: -60px;
+    width: calc(100% + 120px);
+  }
+  @media (max-width: 750px) {
+    margin-left: -40px;
+    margin-right: -40px;
+    width: calc(100% + 80px);
+  }
+  @media (max-width: 550px) {
+    margin-left: -30px;
+    margin-right: -30px;
+    width: calc(100% + 60px);
+  }
+}
+
+.overviewImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  object-position: top center;
+}

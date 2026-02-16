@@ -1,13 +1,9 @@
 import React from 'react';
-import { RxArrowRight } from 'react-icons/rx';
 import style from './About.module.scss';
 import './About.module.scss';
 import { motion } from 'framer-motion';
 
 const About = () => {
-  function joinAll(...classes) {
-    return classes.join(' ');
-  }
   const textAnimation = {
     hidden: {
       y: 40,
@@ -76,14 +72,6 @@ const About = () => {
               building and managing scalable design systems, competitor research, responsive design,
               and end-to-end experiences for web and mobile.
             </p>
-            <a
-              target="_blank"
-              href="https://drive.google.com/file/d/13H6KGoXdkDvfJMPUEKOSXvBTZLncr3bo/view?usp=sharing">
-              <button className={joinAll(style.button, style.hbFillRightBg)}>
-                Check out my CV
-                <RxArrowRight />
-              </button>
-            </a>
           </motion.section>
         </motion.div>
       </div>
